@@ -1,0 +1,18 @@
+#!/usr/bin/sh
+
+# Get modified fork of tlslite
+git clone https://github.com/dmbaggett/tlslite.git
+cd tlslite && git pull origin master && cd ..
+
+# Get tlscrypto
+git clone https://github.com/dmbaggett/tlscrypto.git
+cd tlscrypto && git pull origin master && cd ..
+
+# Get pyasn1 (pure Python ASN.1 parser)
+git clone https://github.com/dmbaggett/pyasn1.git
+cd pyasn1 && git pull origin master && cd ..
+
+# Get C cert-parsing extension
+git clone https://github.com/dmbaggett/cx509.git
+cd cx509 && git pull origin master && cd ..
+

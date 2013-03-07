@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+cd tlscrypto && python setup.py install && cd ..
+cd pyasn1 && python setup.py install && cd ..
+cd cx509 && python setup.py install && cd ..
+cd tlslite && python setup.py install && cd ..
+
